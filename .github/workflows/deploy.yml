@@ -28,5 +28,5 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
       - name: Install Ansible
         run: |
-        #테라폼이 이미 인벤토리.yml과 ansible.cfg를 만들어놨으니, 바로 플레이북 실행
+          #테라폼이 이미 인벤토리.yml과 ansible.cfg를 만들어놨으니, 바로 플레이북 실행
           ansible-playbook nginx_setup.yml
