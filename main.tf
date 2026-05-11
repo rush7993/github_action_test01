@@ -11,7 +11,7 @@ terraform {
     bucket = "tfstate-bucket-84e84019" # 버킷 이름
     key    = "test01/terraform.tfstate" # 버킷 안에서 state 파일이 저장될 경로 /letcure/하위
     region = "ap-northeast-2" # 버킷이 존재하는 리전 
-    dynamodb_table ="terraform-lock_test01" # 잠금 기능을 사용할 dynamodb 테이블 이름(자동관리됨)
+    dynamodb_table ="terraform-lock-test01" # 잠금 기능을 사용할 dynamodb 테이블 이름(자동관리됨)
     encrypt = true
   }
 }
