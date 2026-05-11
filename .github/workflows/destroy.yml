@@ -4,8 +4,6 @@ on:
   workflow_dispatch: #수동으로 트리거할 수 있게 설정
 jobs:
   terraform-destroy:
-    jobs:
-  terraform-destroy:
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
